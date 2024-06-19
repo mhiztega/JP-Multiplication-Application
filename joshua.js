@@ -9,7 +9,9 @@ const formEl = document.getElementById("form");
 
 const scoreEl = document.getElementById("score");
 
-let score = JSON.parse(localStorage.getItem("score"));
+const btnEl = document.getElementById("submit");
+
+let score = JSON.parse(localStorage.getItem("score"))
 
 if (!score) {
     score = 0;
